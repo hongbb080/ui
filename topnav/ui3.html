@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제3</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            
+            background-color: #ececec;
+            margin: 5px auto;
+            text-align: center;
+            padding: 5px;
+        }
+
+        main {
+            /* width : 너비가 고정된 값
+            max-width :  최대 너비를 설정하는 속성 <-> min-width */
+            max-width: 960px;
+            /* 중앙 정렬 */
+            margin: 0 auto;
+        }
+        .boxleft {
+            float: left;
+            width: 65%;
+        }
+        .boxright {
+            float: left;
+            width: 35%;
+        }
+
+        .boxleft img { width: 100%;}
+
+        .leftbot {
+            background-color: #ececec;
+            padding: 10px;
+            margin-top: 5px;    
+        }
+
+        .top, .bot {
+            margin: 10px;
+            padding: 10px;
+            background-color: #ececec;
+        }
+        
+        h2 {
+            margin-top: 5px;
+            padding: 5px;
+        }
+        main::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Weekly ping</h1>
+    </header>
+    <main>
+        <!-- section : 메인 컨텐츠 중 컨텐츠를 구분하는 태그, 주제가 달라지면 section을 추가해서 사용 -->
+        <!-- article : 같은 주제의 다른 내용을 표시할때 사용하는 태그 -->
+        <div class="boxleft">
+            <div>
+                <img src="../images/img_notebook.jpg" alt="">
+            </div>
+            <div class="leftbot">
+                <h2>Montero</h2>
+                <p>무가득 가슴속에 노새, 계십니다. 노루, 이제 까닭이요, 사람들의 밤이 걱정도 버리었습니다. 덮어 별이 까닭이요, 지나고 봄이 잔디가 불러 않은 가득 듯합니다. 밤이 이름과, 
+                    된 했던 다 계십니다. 별이 릴케 나는 말 가을로 내 소녀들의 잔디가 거외다. 이네들은 쓸쓸함과 별이 그리워 시인의 별 강아지, 계집애들의 까닭입니다. 
+                    힘차게 있으며, 스며들어 있는가? 뛰노는 뜨거운지라, 인생의 목숨이 가는 행복스럽고 듣는다.                    
+                    인생을 내려온 동산에는 얼마나 하는 사람은 사막이다.</p>
+            </div>
+        </div>
+        <div class="boxright">
+            <div class="top">
+                <h2>News</h2>
+                <p>아름답고 봄바람을 미묘한 천자만홍이 얼마나 하는 예수는 일월과 사막이다. 그와 생생하며, 바이며, 우리의 원질이 청춘을 얼마나 있으랴?
+                    때에, 청춘에서만 시들어 찾아다녀도, 품에 교향악이다. 힘차게 있으며, 스며들어 있는가? 뛰노는 뜨거운지라, 인생의 목숨이 가는 행복스럽고 듣는다.                    
+                    인생을 내려온 동산에는 얼마나 하는 사람은 사막이다. 맺어, 보이는 그들은 옷을 그것은 칼이다.힘차게 있으며, 스며들어 있는가? 뛰노는 뜨거운지라, 인생의 목숨이 가는 행복스럽고 듣는다.                    
+                    인생을 내려온 동산에는 얼마나 하는 사람은 사막이다. 맺어, 보이는 그들은 옷을 그것은 칼이다.</p>
+            </div>
+            <div class="bot">
+                <h2>Very</h2>
+                <p>힘차게 있으며, 스며들어 있는가? 뛰노는 뜨거운지라, 인생의 목숨이 가는 행복스럽고 듣는다.                    
+                    인생을 내려온 동산에는 얼마나 하는 사람은 사막이다. 맺어, 보이는 그들은 옷을 그것은 칼이다.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
