@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    *  {
+     box-sizing: border-box;
+    }
+
+    .box {
+        background-color: rgba(235, 235, 235, 0.651);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .box h2 {
+        text-align: center;
+        color: #7283ce;
+        font-weight: normal;
+        font-size: 28px;
+        margin-bottom: 0px;
+        padding-top: 15px;
+    }
+
+    .ju {
+        margin: 5px;
+    }
+    .pic {
+        float: left;
+        margin-right: 15px;
+        margin-left: 15px;
+        color: #7283ce;
+        font-size: 30px;
+        width: 3%;
+        
+    }
+
+    .text {
+        float: left;
+        width: 93%;
+        margin-top: 5px;
+    }
+
+    input {
+        display: block;
+        width: 97%;
+        font-size: 24px;
+        border: 1px solid lightgray;
+    }
+    .btn {
+        text-align: center;
+    }
+
+    .ju::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .btn button {
+        background-color: #7283ce;
+        color: white;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: none;
+        margin: 20px;
+    }
+
+    .btn button:hover {
+        background-color: lightgray;
+        color: black;
+    }
+
+</style>
+<body>
+    <div class="box">
+        <h2>Contact Us</h2>
+        <div class="ju">
+            <div class="pic"><i class="fa fa-user"></i></div>
+            <!-- input의 display속성을 block 변경 -->
+            <!-- width: 100%로 설정 -->
+            <div class="text"><input type="text" placeholder="First Name"></div>
+        </div>
+        <div class="ju">
+            <div class="pic"><i class="fa fa-user"></i></div>
+            <div class="text"><input type="text" placeholder="Last Name"></div>
+        </div>
+        <div class="ju">
+            <div class="pic"><i class="fa fa-envelope-o" style="font-size: 27px;" ></i></div>
+            <div class="text"><input type="text" placeholder="Email"></div>
+        </div>
+        <div class="ju">
+            <div class="pic"><i class="fa fa-phone" ></i></div>
+            <div class="text"><input type="text" placeholder="Phone"></div>
+        </div>
+        <div class="ju">
+            <div class="pic"><i class="fa fa-pencil" ></i></div>
+            <div class="text"><input type="text" placeholder="Message"></div>
+        </div>
+        <div class="btn">
+        <button>Send</button>
+        </div>
+    </div>
+    
+</body>
+</html>

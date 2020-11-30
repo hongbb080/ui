@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pricing table</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header h2 {
+            /* 텍스트의 굵기 조절 */
+            font-weight: normal;
+        }
+
+        .pr, .pr2 {
+            float: left;
+            width: 30%;
+            margin: 10px;
+            margin-top: 5px;
+            border: 1px solid #b8b8b8;     
+        }
+        
+        .menu {
+            border-bottom: 1px solid #b8b8b8;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 26px;
+        }
+        .menu2 {
+            background-color: green;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 26px;            
+        }
+        .menu p, .menu2 p {
+            margin: 7px;
+        }
+        .box {
+            border-bottom: 1px solid #b8b8b8;
+            text-align: center;
+        }
+        .box h2 {
+            font-weight: normal;
+            margin-bottom: 0px;
+            font-size: 27px;
+        }
+
+        .box2 {
+            background-color: #ececec;
+            text-align: center;
+        }
+        .btn {
+            background-color: rgb(0, 182, 0);
+            color: white;
+            padding: 5px;
+            margin: 20px;
+            border: 0px;
+            font-size: 16px;
+        }
+        .btn:hover {
+            /* cursor : 마우스 포인트 속성 */
+            cursor: pointer;
+            background-color: lightgray;
+            color: black;
+        }
+        .pr:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .pr2:hover  {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        main::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header><h2>Responsive Pricing Tables</h2></header>
+    
+    <main>
+        <div class="pr">
+            <div class="menu"><p>Basic</p></div>
+            <div class="box"><p><strong>10GB</strong> storage</p></div>
+            <div class="box"><p><strong>10</strong> Emails</p></div>
+            <div class="box"><p><strong>10</strong> Domains</p></div>
+            <div class="box"><p><strong>Endless</strong> Support</p></div>
+            <div class="box"><h2><strong>$ 10</strong></h2><p style="color: #8a8a8a;">per month</p></div>
+            <div class="box2"><button class="btn">Sign up</button></div>
+        </div>
+        <div class="pr2">
+            <div class="menu2"><p>Pro</p></div>
+            <div class="box"><p><strong>25GB</strong> storage</p></div>
+            <div class="box"><p><strong>25</strong> Emails</p></div>
+            <div class="box"><p><strong>25</strong> Domains</p></div>
+            <div class="box"><p><strong>Endless</strong> Support</p></div>
+            <div class="box"><h2><strong>$ 25</strong></h2><p style="color: #8a8a8a;">per month</p></div>
+            <div class="box2"><button class="btn">Sign up</button></div>
+        </div>
+        <div class="pr">
+            <div class="menu 3"><p>Premium</p></div>
+            <div class="box"><p><strong>50GB</strong> storage</p></div>
+            <div class="box"><p><strong>50</strong> Emails</p></div>
+            <div class="box"><p><strong>50</strong> Domains</p></div>
+            <div class="box"><p><strong>Endless</strong> Support</p></div>
+            <div class="box"><h2><strong>$ 50</strong></h2><p style="color: #8a8a8a;">per month</p></div>
+            <div class="box2"><button class="btn">Sign up</button></div>
+        </div>
+    </main>
+</body>
+</html>
