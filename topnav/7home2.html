@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        article {
+            width: 100%;
+        }
+        .side {
+            float: left;
+            width: 20%;
+        }
+        section {
+            float: left;
+            width: 80%;
+        }
+
+        .img {
+            border: 1px solid #ececec;
+        }
+
+        .img img {
+            width: 80%;
+            padding: 10px;
+        }
+        .w3 {
+            background-color: teal;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            margin: 0px;
+        }
+        .w3 h1 {
+            font-size: 33px;
+            font-weight: 400;
+        }
+
+        .mun {
+            background-color: black;
+            width: 100%;
+        }
+        .mun i:hover{
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        .mun i {
+            color: white;
+            width: 31%;
+            font-size: 20px;
+            margin: 0px;
+            padding: 7px;
+            padding-left: 13%;
+            
+        }
+
+        .sidebox p{
+            margin: 0px;
+            padding: 5px;
+            font-size: 18px;
+        }
+        .sidebox p:hover {
+            background-color: #ececec;
+            cursor: pointer;
+        }
+        section h1 {
+            font-size: 40px;
+            font-weight: 500;
+            margin: 10px;
+            margin-left: 15px;
+        }
+        
+        section h2 {
+            font-weight: 450;
+            margin-left: 15px;
+        }
+        section div button {
+            background-color: teal;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-left: 15px;
+        }
+        .menu {
+            margin-left: 15px;
+            border-left: 4px solid teal;
+            background-color: white;
+            color: black;
+            font-size: 18px;
+            width: 97%;
+        }
+
+        .menu pre {
+            padding: 10px;
+        }
+        .btn {
+            margin-bottom: 15px;
+        }
+        .sidebutton p:hover {
+            background-color: lightgray;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        .box {
+            background-color: #ececec;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 15px;
+        }
+
+        pre {
+            font-size: 17px;
+        }
+
+        .bottom {
+            text-align: center; 
+            margin: 0px;
+            padding: 40px;
+            padding-bottom: 60px;
+        }
+        .bottom a {
+            float: left;
+            margin-left: 40%;
+            margin-bottom: 60px;
+            
+        }
+        .bottom p {
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            width: 5%;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <div class="side">
+            <div class="mun">
+                <i class="fa fa-align-justify"></i>
+                <i class="fa fa-file"></i>
+                <i class="fa fa-camera"></i>
+            </div>
+            <div class="img">
+                <img src="../images/w3schools.png" alt="">
+            </div>
+            <div class="sidebox">
+                <p>Learn HTML</p>
+                <p>Learn W3.CSS</p>
+                <p>Learn JavaScript</p>
+                <p>Learn SQL</p>
+                <p>Learn PHP</p>
+            </div>
+        </div>
+        <section>
+            <header class="w3">
+                <h1>W3Schools.com</h1>
+            </header>
+            <div class="box">
+                <h1>CSS</h1>
+                <h2>The Language for Styling Web Pages</h2>
+                <div>
+                    <button>LEARN CSS</button>
+                    <button style="margin-left: 0px;">CSS REFERENCE</button>
+                </div>
+                <div class="menu">
+<pre><span style="color: brown;">body</span> { 
+    <span style="color: red;">background-color</span>: <span style="color: blue;">#d0e4fe</span>;
+}
+<span style="color: brown;">h1</span> {
+    <span style="color: red;">color</span>: <span style="color: blue;">orange</span>;
+    <span style="color: red;">text-align</span>: <span style="color: blue;">center</span>;
+}
+<span style="color: brown;">p</span> {
+    <span style="color: red;">font-family</span>: <span style="color: blue;">"Times New Roman</span>;
+    <span style="color: red;">font-size</span>: <span style="color: blue;">20px</span>;
+}
+</pre>                   
+                </div>
+                <div>
+                    <button class="btn">Try it Yourself</button>
+                </div>
+            </div>
+            <div class="box">
+                <h1>JS</h1>
+                <h2>The Language for Styling Web Pages</h2>
+                <div>
+                    <button>LEARN JS</button>
+                    <button style="margin-left: 0px;">JS REFERENCE</button>
+                </div>
+                <div class="menu">
+<pre><span style="color: teal;">// Click the button to change the color of this paragraph</span>
+
+<span style="color: blue;">function</span> myFunction() {
+    <span style="color: blue;">var</span> x;
+    x = document.getElementById(<span style="color: brown;">"demo"</span>);
+    x.style.fontSize = <span style="color: brown;">"25"</span>;
+    x.style.color = <span style="color: brown;">"red"</span>;
+}
+</pre>                   
+                </div>
+                <div>
+                    <button class="btn">Try it Yourself</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="bottom">
+                    <a href="">FORUM</a>
+                    <p>|</p>
+                    <a style="margin-left: 0px;" href="">ABOUT</a>
+                </div>    
+            </div>
+        </section>
+    </article>
+</body>
+</html>

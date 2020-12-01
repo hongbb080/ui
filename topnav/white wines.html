@@ -17,8 +17,11 @@
         }
         
         header a {
-            font-size: 30px;
+            font-size: 36px;
             color: white;
+        }
+        .a2{
+            float: right;
         }
         .left {
             float: left;
@@ -30,7 +33,8 @@
             width: 35%;
             padding: 10px;
         }
-
+        
+        /* 이미지의 크기를 최대로 사용 */
         .left img {
             width: 100%;
         }
@@ -46,6 +50,7 @@
         
         table {
             width: 100%;
+        /* table의 각각 colum의 인접 테두리선을 하나로 합하여 줌 */
             border-collapse: collapse;
         }
         
@@ -54,6 +59,10 @@
             padding: 3px;
             padding-left: 10px;
         }
+
+        /* nth-child() : 주로 표 사용 시 짝수 혹은 홀수별로 선택하기 위한 선택자, odd(홀수), even(짝수) */
+        
+
         a:link {
             text-decoration: none;
         }
@@ -66,8 +75,10 @@
 </head>
 <body>
     <header>
+        <!--nav : div와 동일한 태그, 네이게이션바 및 메뉴바를 표시하는 태그 -->
         <h1>White Wines-Chardonnay</h1>
         <a href="./red wines.html">&#171;</a>
+        <a class="a2" href="./red wines.html">&#187;</a>
     </header>
     <main>
         <article>
