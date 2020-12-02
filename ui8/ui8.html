@@ -20,9 +20,9 @@
     </header>
     <main>
         <section class="top">
-            <div>
+            <div class="toimg">
                 <img src="./images/hamburger.jpg" alt="">
-                <div>
+                <div class="le">
                     <h1>Le Catering</h1>
                 </div>
             </div>
@@ -41,11 +41,10 @@
                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </section>
-        <br>
-        <hr>
+
         <!-- menu 영역 -->
         <section class="menu">
-            <div class="menu-left">
+            <div class="meleft">
                 <h1>Our Menu</h1>
                 <h4>Bread Basket</h4>
                 <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
@@ -58,16 +57,40 @@
                 <h4>Blueberry Pancakes</h4>
                 <p>With syrup, butter and lots of berries 8.50</p>
             </div>
-            <div class="menu-right">
+            <div class="meright">
                 <img src="./images/tablesetting.jpg" alt="">
             </div>
         </section>
-
+        
         <!-- contact 영역 -->
-        <section></section>
+        <section  class="contact">
+            <div class="text">
+                <h1>Contact</h1>
+                <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+                <h4>Catering Service, 42nd Living St, 43043 New York, NY</h4>
+                <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+            </div>
+            <div class="box">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="box">
+                <input type="text" placeholder="How many people">
+            </div>
+            <div class="box">
+                <input type="text" type="datetime-local" id="currentDatetime">
+            </div>
+            <div class="box">
+                <input type="text" placeholder="Message\Special requirements">
+            </div>
+            <button class="btn">SEND MESSAGE</button>
+        </section>
     </main>
     <footer>
         <p>made by <span>csy</span></p>
     </footer>
+    <script>
+        document.getElementById('currentDatetime').value= new
+    Date().toISOString().slice(0,16);
+    </script>
 </body>
 </html>
