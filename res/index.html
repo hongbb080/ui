@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 사이트</title>
+    
+    <link rel="stylesheet" href="./css/myStyle.css">
+</head>
+
+<!--반응형 웹 : 디바이스의 화면 크기에 따라서 여러가지 화면으로 변경되는 웹사이트 구축 방식
+    미디어쿼리를 사용하며 화면 크기에 따라서 CSS 속성을 변경시켜 여러가지 화면 크기의 사이트를 구축
+    
+    뷰포트(viewport) : 웹 페이지에서 사용자가 볼수 있는 영역
+    - 디바이스에 따라서 뷰포트는 다르며 컴퓨터 화면보다 스마트폰의 화면이 더 작음
+    - html5는 웹 디자이너가 meta 태그를 통해서 뷰포트를 설정할 수 있음
+    - <meta name="viewport" content="width=device-width, initail-scale=1.0">
+    - width=device-width : 디바이스의 화면 너비로 현재 사이트의 너비를 설정
+    - initial-scale=1.0 : 현재 화면의 확대/축소 수준 1.0은 현재 화면의 크기를 100%로 설정
+
+    미디어쿼리 : 반응형 웹 사이트를 제작하는데 필수적인 속성
+    - 지정한 화면 크기에 따라서 css속성을 다르게 사용할 수 있음
+    - 미디어쿼리는 구형 브라우저에서는 동작하지 않을 수 있음
+    사용법
+    @media not|only미디어 타입 and(미디어쿼리 적용 옵션) {
+        CSS코드
+    }
+
+    not|only : only는 지정한 CSS형식대로 사용하겠다는 의미, not은 지정한 CSS형식의 반대로 사용
+    미디어 타입 : all, print, screen, speech
+    - all : 기본값, 모든 디바이스에 적용
+    - print : 각종 프린트 디바이스
+    - screen : 컴퓨터 모니터, 태블릿화면, 스마트폰 화면 등 각종 디바이스화면(all과 함께 가장 많이 사용)
+    - speech : 문자를 읽어주는 디바이스(TTS)
+    
+    미디어쿼리 적용 욥션 : 주로 max-width, min-width를 사용(웹 사이트 제작은 screen, all을 주로 사용)
+    
+    각 디바이스 마다의 화면 설정 크기
+    - extra small : 576px 미만
+    - small : 576px 까지
+    - medium : 768px 까지
+    - large : 992px 까지
+    - extra large : 1200px 까지  -->
+    
+    
+<body>
+    <header>
+        <h1>반응형 웹 사이트</h1>
+    </header>
+
+    <main>
+        <aside class="col-3 col-s-3 menu">
+            <ul>
+                <li>메뉴 1</li>
+                <li>메뉴 2</li>
+                <li>메뉴 3</li>
+                <li>메뉴 4</li>
+            </ul>
+        </aside>
+
+        <section class="col-6 col-s-9">
+            <h1>메뉴 1</h1>
+            <p>실로 청춘에서만 얼마나 풀이 대한 힘차게 뜨고, 피다. 기관과 노년에게서 그들의 산야에 것이다. 가치를 풍부하게 능히 온갖 불러 끓는다. 
+                인생에 곳이 소금이라 불어 것이다.보라, 두기 얼음에 이것이다.</p>
+        </section>
+
+        <aside class="col-3 col-s-12">
+            <div class="right">
+                <h2>오른쪽</h2>
+                <p>이름과 계집애들의 새겨지는 이 마리아 이름을 거외다. 하나에 써 내일 딴은 봅니다.</p>
+                <h2>사이드바</h2>
+                <p>내 별 강아지, 우는 걱정도 언덕 까닭입니다. 마리아 별 추억과 사람들의 속의 불러 멀듯이, 새겨지는 까닭이요, 있습니다.</p>
+                <h2>내용</h2>
+                <p>강아지, 마디씩 어머님, 잠, 하늘에는 않은 다 봅니다. 것은 아침이 둘 내린 봅니다.</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>웹 브라우저의 크기를 변경하면 사이트의 모양이 변경됨</p>
+    </footer>
+</body>
+</html>
