@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+article {
+    width: 100%;
+    flex: 24%;
+    margin: 2px;
+}
+article img {
+    width: 100%;
+}
+
+@media all and (max-width: 576px) {
+    article {
+        flex-direction: column;
+    }
+ 
+}
+
+/* @media all and (max-width: 576px) {
+    section {
+    flex-direction: column;
+    }
+} */
